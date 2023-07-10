@@ -37,7 +37,7 @@
 
         private void CheckNegativeSides()
         {
-            if (_sides.Where(s => s <= 0).Any())
+            if (_sides[0] <= 0)
                 throw new ArgumentException("All sides must be greater than zero");
         }
 
